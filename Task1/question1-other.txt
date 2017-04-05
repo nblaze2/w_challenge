@@ -1,0 +1,8 @@
+cat 2014-09-03.log| grep status=404 | grep -v  heroku | cut -f9,10 | cut -d' ' -f6 |sort |uniq -c
+4379 path=/api/accounts/3
+
+cat 2014-09-03.log| grep status=404 | grep -v  heroku | cut -f9,10 | cut -c 1-10,80-104 |sort |uniq -c
+2177 app/web.1	GET path=/api/accounts/3
+2202 app/web.2	GET path=/api/accounts/3
+
+grep status=404  2014-09-03.log | sed ’s/^.*path=/path=/’|sed ‘s/ .*host=/host=/’ |sed ‘s/ .*$//’ |sort |uniq -c

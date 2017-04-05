@@ -1,0 +1,32 @@
+443623577150054404	2014-09-03T00:48:45	2014-09-03T00:48:45Z	4147981	demo-workablehr	54.205.78.238	Local5	Warning	heroku/logplex	Error L10 (output buffer overflow): 1215 messages dropped since 2014-09-02T22:31:28+00:00. 
+443623579687608332	2014-09-03T00:48:45	2014-09-03T00:48:46Z	4147981	demo-workablehr	54.205.159.118	Local5	Warning	heroku/logplex	Error L10 (output buffer overflow): 1025 messages dropped since 2014-09-03T00:37:00+00:00. 
+443623580551675925	2014-09-02T14:27:29	2014-09-03T00:48:46Z	4147981	demo-workablehr	54.80.212.95	Syslog	Notice	heroku/web.2	Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM 
+443623580551675927	2014-09-02T14:27:29	2014-09-03T00:48:46Z	4147981	demo-workablehr	54.80.212.95	Syslog	Notice	heroku/web.2	Stopping remaining processes with SIGKILL 
+443623582367768587	2014-09-02T14:27:47	2014-09-03T00:48:46Z	4147981	demo-workablehr	54.82.99.30	Syslog	Notice	heroku/web.2	State changed from starting to up 
+443623583496036357	2014-09-02T14:27:27	2014-09-03T00:48:46Z	4147981	demo-workablehr	54.196.219.161	Syslog	Notice	heroku/web.2	Starting process with command `bundle exec unicorn -p 4234 -c ./config/unicorn.rb` 
+443623586704678915	2014-09-03T00:48:47	2014-09-03T00:48:47Z	4147981	demo-workablehr	54.82.164.30	Local5	Warning	heroku/logplex	Error L10 (output buffer overflow): 1117 messages dropped since 2014-09-02T23:35:48+00:00. 
+443623589569388552	2014-09-02T14:27:20	2014-09-03T00:48:48Z	4147981	demo-workablehr	54.81.156.219	Syslog	Notice	heroku/web.2	Stopping all processes with SIGTERM 
+443623590668296206	2014-09-03T00:48:48	2014-09-03T00:48:48Z	4147981	demo-workablehr	50.17.115.247	Local5	Warning	heroku/logplex	Error L10 (output buffer overflow): 1114 messages dropped since 2014-09-02T23:35:48+00:00. 
+443623593486868490	2014-09-03T00:48:49	2014-09-03T00:48:49Z	4147981	demo-workablehr	54.205.136.1	Local5	Warning	heroku/logplex	Error L10 (output buffer overflow): 1154 messages dropped since 2014-09-02T23:05:45+00:00. 
+443623593545629711	2014-09-03T00:48:49	2014-09-03T00:48:49Z	4147981	demo-workablehr	54.82.118.5	Local5	Warning	heroku/logplex	Error L10 (output buffer overflow): 1093 messages dropped since 2014-09-02T23:46:43+00:00. 
+443623593595920387	2014-09-03T00:48:49	2014-09-03T00:48:49Z	4147981	demo-workablehr	54.204.225.37	Local5	Warning	heroku/logplex	Error L10 (output buffer overflow): 1151 messages dropped since 2014-09-02T23:24:02+00:00. 
+443623593642057732	2014-09-03T00:48:49	2014-09-03T00:48:49Z	4147981	demo-workablehr	54.90.109.176	Local5	Warning	heroku/logplex	Error L10 (output buffer overflow): 1064 messages dropped since 2014-09-03T00:17:19+00:00. 
+443623593776275462	2014-09-03T00:48:49	2014-09-03T00:48:49Z	4147981	demo-workablehr	54.90.125.85	Local5	Warning	heroku/logplex	Error L10 (output buffer overflow): 1133 messages dropped since 2014-09-02T23:31:12+00:00. 
+443623595202338838	2014-09-02T14:27:31	2014-09-03T00:48:49Z	4147981	demo-workablehr	50.17.45.95	Syslog	Notice	heroku/web.2	Process exited with status 137 
+443623595751792657	2014-09-03T00:48:49	2014-09-03T00:48:49Z	4147981	demo-workablehr	54.237.210.181	Local5	Warning	heroku/logplex	Error L10 (output buffer overflow): 1052 messages dropped since 2014-09-03T00:21:20+00:00. 
+443623606178832386	2014-09-02T14:27:17	2014-09-03T00:48:52Z	4147981	demo-workablehr	54.80.127.117	Syslog	Notice	heroku/web.2	Cycling 
+443623606178832388	2014-09-02T14:27:17	2014-09-03T00:48:52Z	4147981	demo-workablehr	54.80.127.117	Syslog	Notice	heroku/web.2	State changed from up to starting 
+443635823062310940	2014-09-03T01:37:24	2014-09-03T01:37:25Z	4147981	demo-workablehr	54.204.225.37	Syslog	Notice	heroku/web.1	Stopping all processes with SIGTERM 
+443635836777726036	2014-09-03T01:37:22	2014-09-03T01:37:28Z	4147981	demo-workablehr	54.80.213.224	Syslog	Notice	heroku/web.1	Cycling 
+443635836777726039	2014-09-03T01:37:22	2014-09-03T01:37:28Z	4147981	demo-workablehr	54.80.213.224	Syslog	Notice	heroku/web.1	State changed from up to starting 
+443635858307047428	2014-09-03T01:37:33	2014-09-03T01:37:33Z	4147981	demo-workablehr	54.237.210.181	Syslog	Notice	heroku/web.1	Starting process with command `bundle exec unicorn -p 26920 -c ./config/unicorn.rb` 
+443635870235648015	2014-09-03T01:37:35	2014-09-03T01:37:36Z	4147981	demo-workablehr	54.82.164.30	Syslog	Notice	heroku/web.1	Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM 
+443635870571192328	2014-09-03T01:37:35	2014-09-03T01:37:36Z	4147981	demo-workablehr	54.82.164.30	Syslog	Notice	heroku/web.1	Stopping remaining processes with SIGKILL 
+443635874438340640	2014-09-03T01:37:37	2014-09-03T01:37:37Z	4147981	demo-workablehr	54.205.159.118	Syslog	Notice	heroku/web.1	Process exited with status 137 
+443635989148360707	2014-09-03T01:38:04	2014-09-03T01:38:04Z	4147981	demo-workablehr	54.196.219.161	Syslog	Notice	heroku/web.1	State changed from starting to up 
+443665413889613830	2014-09-03T03:34:59	2014-09-03T03:35:00Z	4147981	demo-workablehr	54.205.79.18	Syslog	Notice	heroku/worker.1	Cycling 
+443665414220963856	2014-09-03T03:34:59	2014-09-03T03:35:00Z	4147981	demo-workablehr	54.205.79.18	Syslog	Notice	heroku/worker.1	State changed from up to starting 
+443665428410294279	2014-09-03T03:35:02	2014-09-03T03:35:03Z	4147981	demo-workablehr	54.90.109.176	Syslog	Notice	heroku/worker.1	Stopping all processes with SIGTERM 
+443665451403468802	2014-09-03T03:35:08	2014-09-03T03:35:09Z	4147981	demo-workablehr	54.196.219.161	Syslog	Notice	heroku/worker.1	Starting process with command `bundle exec rake jobs:work` 
+443665452661760054	2014-09-03T03:35:09	2014-09-03T03:35:09Z	4147981	demo-workablehr	54.237.210.181	Syslog	Notice	heroku/worker.1	Process exited with status 0 
+443665454247206917	2014-09-03T03:35:09	2014-09-03T03:35:09Z	4147981	demo-workablehr	54.81.227.216	Syslog	Notice	heroku/worker.1	State changed from starting to up 

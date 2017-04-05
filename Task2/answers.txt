@@ -1,0 +1,5 @@
+Please just run:
+
+ruby /dvdrental/answers.rb
+
+Thank you.

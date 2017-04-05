@@ -1,0 +1,7 @@
+   1 heroku/router	at=info path="/accounts"
+4378 heroku/router	at=info path="/api/accounts/3"
+   1 heroku/router	at=info path="/backend/subscription/update_billing"
+   1 heroku/router	at=info path="/petitions"
+   1 heroku/router	at=info path="/uas/request-password-reset?trk=uas-resetpass"
+   1 heroku/router	at=info path="/user_password_resets"
+cat 2014-09-03.log | grep status=404 | grep heroku | cut -f9,10 | cut -d' ' -f1,3 | sort | uniq -c

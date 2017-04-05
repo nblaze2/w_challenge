@@ -1,0 +1,51 @@
+1) Answer:
+1 path="/accounts"host=www.workabledemo.com
+4378 path="/api/accounts/3"host=workabledemo.com
+1 path="/backend/subscription/update_billing"host=sampleco.workabledemo.com
+1 path="/petitions"host=www.workabledemo.com
+1 path="/uas/request-password-reset?trk=uas-resetpass"host=www.workabledemo.com
+1 path="/user_password_resets"host=www.workabledemo.com
+4379 path=/api/accounts/3
+
+* I found the answer using this unix script:
+grep status=404  2014-09-03.log | sed 's/^.*path=/path=/' | sed 's/ .*host=/host=/' | sed 's/ .*$//' | sort | uniq -c
+
+* When I first started looking for the 'status=404' it was hard to locate all of them,
+so I split up the work into finding the heroku errors and the app/web.X errors.
+Then I was able to cobble together a single script that found them all.
+I included all the file work I did before arriving at the final answer.
+
+
+2) The average time to serve a page is: 312 ms
+grep service= 2014-09-03.log | grep -v status=4 | grep -v status=5 | cut -f10 | cut -d' ' -f9 | ruby question2.rb
+
+* I operated under the assumption that 'service=XXXms' was the only time I needed to work with.
+Then I removed all the status 400's and 500's, because I didn't really consider than as 'serving' a page.
+Then I fed the results into a ruby script designed to take the numbers from
+each 'service=XXXms' and find the average of those responses.
+
+3) Answer: "delayed_jobs"
+grep SELECT 2014-09-03.log | grep FROM | sed 's/^.*FROM /FROM/' | sed 's/ .*$//' | sort | uniq -c | sort -n
+
+* I used the unix script to find all the times there was a SQL pull from a db,
+and counted the instances of each of the unique db's.
+
+4) Yes. 63 times.
+grep status=304 2014-09-03.log | wc -l
+       5
+grep status=302 2014-09-03.log | wc -l
+      58
+grep status=3 2014-09-03.log | wc -l
+      63
+
+* I looked for any possible status 300 responses, because those are redirects.
+There were 5 304's and 58 302's for a total of 63.
+
+5) Yes. 5
+grep status=5 2014-09-03.log
+
+* I looked for status 500's. There were 5 of them.
+The first seemed to be an interuption in service.
+The second and third seemed to be a missing template,
+and then a fail trying to use the template for some numbers in hexidecimal.
+The forth and fifth was the same issue as the 2nd & 3rd 
